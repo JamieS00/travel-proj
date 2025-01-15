@@ -2,9 +2,12 @@
   --main-font: "Poppins", sans-serif;
   --dark-color: #272044;
 }
-.container {
+
+.page-container {
   max-width: 1400px;
   margin: 0 auto;
+  /* background-color: var(--dark-color); */
+  background-color: pink;
 }
 
 header {
@@ -19,6 +22,10 @@ header {
   color: white;
   text-align: center;
   font-family: var(--main-font);
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* header h1,
@@ -60,8 +67,14 @@ header a {
   letter-spacing: 3px;
   margin-top: 32px;
 }
+
+/* FOOTER */
 footer {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  /* color convert to rgba */
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.8),
+      rgba(39, 32, 68, 0.8)
+    ),
     url("/images/background.jpg");
   background-size: cover;
   background-position: center;
@@ -69,6 +82,12 @@ footer {
 
   background-color: var(--dark-color);
   color: white;
+  padding: 100px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
 }
 .footer-container {
   padding: 30px;
@@ -79,6 +98,10 @@ footer h3 {
   line-height: 30px;
 }
 footer ul {
+  padding: 0;
+}
+
+footer li {
   list-style-type: none;
 }
 footer a {
