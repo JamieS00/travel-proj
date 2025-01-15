@@ -60,6 +60,48 @@ header a {
   letter-spacing: 3px;
   margin-top: 32px;
 }
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-color: var(--dark-color);
+  color: white;
+}
+.footer-container {
+  padding: 30px;
+}
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+footer ul {
+  list-style-type: none;
+}
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+
+footer div {
+  margin-top: 32px;
+  font-family: var(--main-font);
+  /* 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px; */
+  /* display: flex;
+  justify-content: center; */
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.5;
+  line-height: 24px;
+}
 
 /* Mobile responsive */
 @media (max-width: 900px) {
