@@ -2,12 +2,12 @@
   --main-font: "Poppins", sans-serif;
   --dark-color: #272044;
 }
-
 .page-container {
   max-width: 1400px;
   margin: 0 auto;
-  /* background-color: var(--dark-color); */
-  background-color: pink;
+}
+body {
+  background-color: var(--dark-color);
 }
 
 header {
@@ -17,8 +17,8 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 60px 0;
-  /* padding: 200px 0; */
+  /* padding: 60px 0; */
+  padding: 200px 0;
   color: white;
   text-align: center;
   font-family: var(--main-font);
@@ -27,12 +27,6 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* header h1,
-header h2,
-header h3, header a{
-  text-align: center;
-} */
 
 header h3 {
   font-size: 24px;
@@ -68,9 +62,7 @@ header a {
   margin-top: 32px;
 }
 
-/* FOOTER */
 footer {
-  /* color convert to rgba */
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.8),
       rgba(39, 32, 68, 0.8)
@@ -89,9 +81,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
 }
-.footer-container {
-  padding: 30px;
-}
+
 footer h3 {
   font-weight: 700;
   font-size: 20px;
@@ -112,12 +102,6 @@ footer a {
 footer div {
   margin-top: 32px;
   font-family: var(--main-font);
-  /* 
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px; */
-  /* display: flex;
-  justify-content: center; */
 }
 footer p {
   font-weight: 400;
@@ -126,7 +110,6 @@ footer p {
   line-height: 24px;
 }
 
-/* Mobile responsive */
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
