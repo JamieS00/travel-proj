@@ -23,10 +23,6 @@ header {
   text-align: center;
   font-family: var(--main-font);
 }
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 header h3 {
   font-size: 24px;
@@ -62,6 +58,7 @@ header a {
   margin-top: 32px;
 }
 
+/*FOOTER*/
 footer {
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.8),
@@ -75,6 +72,10 @@ footer {
   background-color: var(--dark-color);
   color: white;
   padding: 100px 0;
+}
+section {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid {
@@ -108,8 +109,10 @@ footer p {
   font-size: 16px;
   opacity: 0.5;
   line-height: 24px;
+  margin-right: 20px;
 }
 
+/*Mobile Responsive*/
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
