@@ -9,6 +9,11 @@
 body {
   background-color: var(--dark-color);
 }
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
@@ -58,6 +63,44 @@ header a {
   margin-top: 32px;
 }
 
+/*MAIN*/
+main {
+  background-color: #ffffff;
+}
+main h2 {
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.3;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0;
+}
+main h3 {
+  font-family: var(--main-font);
+  color: var(--dark-color);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+main p {
+  font-family: var(--main-font);
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: 1.5;
+  color: var(--dark-color);
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 /*FOOTER*/
 footer {
   background-image: linear-gradient(
@@ -71,16 +114,11 @@ footer {
 
   background-color: var(--dark-color);
   color: white;
-  padding: 100px 0;
-}
-section {
-  max-width: 1200px;
-  margin: 0 auto;
+  /* padding: 100px 0; */
 }
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
 }
 
@@ -111,9 +149,12 @@ footer p {
   opacity: 0.5;
   line-height: 24px;
 }
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
 
 /*Mobile Responsive*/
-@media (max-width: 900px) {
+@media (max-width: 960px) {
   header {
     padding: 60px 0;
   }
@@ -126,9 +167,12 @@ footer p {
   header h3 {
     font-size: 12px;
   }
-  footer h3 {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 15px;
+  section {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
   }
 }
