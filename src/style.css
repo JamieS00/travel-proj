@@ -98,8 +98,10 @@ main p {
   grid-template-columns: 1fr 1fr;
 }
 .img-responsive {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+
+  /* height: auto;
+  display: block; */
 }
 
 .grid-3-columns {
@@ -115,6 +117,23 @@ section.activites {
   /* padding: 12px; */
   margin: 30px 0;
 }
+
+/*removes white space so img shows*/
+.card-header.grid {
+  grid-gap: 0;
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-header iframe {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+}
+
 .card-body {
   padding: 30px;
 }
@@ -225,9 +244,14 @@ footer p {
   section {
     padding: 30px;
   }
-
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed-map {
+    aspect-ratio: 16 /9;
   }
 }
