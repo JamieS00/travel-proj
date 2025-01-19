@@ -115,7 +115,7 @@ section.activites {
 .card {
   background-color: white;
   /* padding: 12px; */
-  margin: 30px 0;
+  /* margin: 30px 0; */
 }
 
 /*removes white space so img shows*/
@@ -175,6 +175,7 @@ main h5 {
   background-color: #462cb3;
   text-decoration: none;
 }
+
 /*FOOTER*/
 footer {
   background-image: linear-gradient(
